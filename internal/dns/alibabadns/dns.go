@@ -59,6 +59,7 @@ func AlibabaAddRecord(domain, SubDomain, recordType, value, RecordLine string, c
 	request.Type = recordType   // 记录类型，例如 "A"
 	request.Value = value       // 记录值，例如 IP 地址
 	request.Line = RecordLine   // 记录线路，例如 "default"
+	//request.TTL = "600"
 
 	// 发送请求
 	response, err := c.AddDomainRecord(request)

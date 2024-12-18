@@ -45,7 +45,7 @@ type NAMEcom struct {
 // 读取配置文件所有信息（配置改变时更改）
 func loadConfig() (*Config, error) {
 	// 加载 .env 文件(自己的路径)
-	err := godotenv.Load("/Users/bobi/codes/TencentDNSManager/.env")
+	err := godotenv.Load("/Users/bobi/codes/DNSManager/.env")
 	if err != nil {
 		log.Fatalf("Error loading .env file: %v", err)
 		return nil, err
