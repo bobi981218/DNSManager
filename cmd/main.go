@@ -48,16 +48,16 @@ func main() {
 		if recordLine == "" {
 			recordLine = "default"
 		}
-		
-	}
 
-	if recordType == "" {
-		recordType = "A"
 	}
 
 	if subDomain == "" {
 		subDomain = "@"
 	}
+	if recordType == "" {
+		recordType = "A"
+	}
+
 	// 设置信号处理函数
 	signalChan := make(chan os.Signal, 1)
 	signal.Notify(signalChan, syscall.SIGINT, syscall.SIGTERM)

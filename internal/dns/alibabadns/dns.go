@@ -44,7 +44,7 @@ func AlibabaAddDomain(domain string, c *alidns.Client) {
 
 	// 打印响应结果
 	fmt.Printf("%s\n", response)
-	fmt.Println("域名添加完成")
+	fmt.Println("域名添加已完成")
 
 }
 
